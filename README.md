@@ -120,6 +120,7 @@ Here's where things get interesting:
 6.	A real-life network, containing a thousand of neurons in each layer, has 1 million weights between 2 layers. With 1 thousand layers (hence the term "deep learning"), that makes a billion weights. This is why very powerful GPUs (floating point calculators) are required to train it.
 7.	Imagine connecting several of these single networks, creating a system like the Transformer, used in chatbots and image generation. The set of connections and weights in this system, called the model, can contain billions of parameters!
 8.	Transformers are used in Large Language Models for chatbots and in Diffusion Models for image generation.
+
 The above experiment required no maths and no code. To understand further the current developments in AI, we need some maths and some coding. This is why the following is composed of YouTube videos and scientific articles. The knowledge gained from the experiments above will help us understand the explanations.
 
 ## 3	Recurrent Neural Network
