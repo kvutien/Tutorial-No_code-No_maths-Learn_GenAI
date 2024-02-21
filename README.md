@@ -1,17 +1,18 @@
 # No code, No maths - Learn GenAI
 This is a tutorial to Neural Networks and Generative AI
 
-Ever wonder how chatbots work? You know, those virtual assistants always ready to answer your questions? Let's dive in without any intimidating math or coding!
+**Ever wonder how chatbots work?** You know, those virtual assistants always ready to answer your questions? Let's dive in without any intimidating math or coding!
 
 For this we will proceed in 3 steps:
 
 1.	We will use a playground to "no-code" build and run a neural network. We see how it "learns" a task. Neural networks are the bricks and mortar of computer vision, of image generators and of natural language processing (NLP). NLP is the basis of chatbots.
 2.	Then we'll watch a 25-minutes "no-maths" video from Harvard University explaining how computers "talk" to each other, using special math tricks called "Transformers." Think of it like translating languages, but for computers! This helps them understand and respond to our words, making chatbots more natural.
 3.	By combining these building blocks and language skills, we get chatbots! But remember, there's no magic or real intelligence involved. It's like a complex machine trained to respond in specific ways. This knowledge helps us appreciate what chatbots can do (answer questions, translate languages) and what they cannot (think for themselves, solve complex problems).
+
 So, there you have it! A basic understanding of chatbots without any scary technical stuff. Remember, knowledge is power, and knowing how something works makes it less intimidating and more fun!
 
 ## 1. Graphically Build & Run a Neural Network 
-Imagine a website where you can play with mini-brains that can learn! With it you can build and train neural networks to discriminate between 2 datasets. These pairs are more or less difficult to discriminate, so your neural network also has to be more or less complex.
+Imagine a website where you can play with mini-brains that can learn! With it you can build and train neural networks to discriminate between 2 datasets. These pairs are more or less difficult to discriminate, so your neural network will also be more or less complex.
 
 You can play around on your own, but this is a guide to help you get started.
 ![Learning data sets](./images/00-data_sets.png)
@@ -32,12 +33,14 @@ This is the web site: https://playground.tensorflow.org/ The screenshot below sh
 - the run button starts the magic part of the neural network. It uses the TensorFlow library to train the neural network. You can pause and restart the training.
 *Our machine learns by playing a guessing game. It gets clues (connection weights) and tries to guess if the answer is "blue" or "red". If it guesses wrong, it learns from its mistakes and adjusts its guesses next time. This "learning" happens by changing the connection weights between its brain cells. The more it practices, the better it gets at guessing correctly!*
 - the step button does the training step-by-step.
-5.	see the loss function and discrimination:
+
+**5.	see the loss function and discrimination**:
 ![Loss function](./images/00b-loss_function.png)
 
 Additional note:
 
--	In our artificial brain, stronger connections are thicker. We can shrink this brain by removing weak connections, like unimportant shortcuts, without losing much information. This is how we make big language models smaller and faster! In jargon, they call this process LoRA (Low Rank Adaptation)
+-	In our artificial brain, stronger connections are thicker. We can shrink this brain by removing weak connections, like unimportant shortcuts, without losing much information. This is how we make big language models smaller and faster! In jargon, they call this process LoRA (Low Rank Adaptation).
+
 Now let's start the exercises.
 
 ### 1.1	Simplest discrimination
@@ -49,7 +52,7 @@ Exercises:
 -	Add another hidden layer. Reset and run. Observe that discrimination is not better. Increase the neurons in the layers. Not better discrimination. Our first try hit already the optimal neural network.
 
 ### 1.2	Increase Pattern Complexity: disjoint groups
-The first exercise above compares two sets where dots within each group are close together. The following exercise uses two different sets where the groups themselves are completely separate.
+The first exercise above discriminates two sets where dots within each group are close together. The following exercise uses two sets where the groups themselves are completely separate.
 -	Try with the above one-layer neural network. Reset, run and observe that the loss function is high for both the training set and the test set (0.38-0.4), which means bad discrimination.
 ![Disjoint groups](./images/03-neural_network.png)
 
@@ -95,6 +98,7 @@ Let's choose the pair of datasets as two swirling clouds of data, tightly linked
 -	Observe that all input preprocessing connections to the hidden layer are thick and all neurons in this hidden layer also have thick connections to the output. This means that the neural network is optimal, although training takes a lot of iterations before converging.
 -	Repeat with a configuration having 7 neurons in the output layer. Observe that training convergence is faster.
 ![Enclosing data sets](./images/05a-neural_network.png)
+
 The following experiment will give us several interesting hints on how to design neural networks.
 -	Select only the 2 linear preprocessing functions ("x1" and "x2"). 
 -	Define a fully complex neural network with 6 hidden layers, each with 7 neurons. 
