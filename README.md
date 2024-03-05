@@ -1,5 +1,5 @@
 # No code, No maths - Learn GenAI
-This is a tutorial to Neural Networks and Generative AI
+This is a no-code, no-maths tutorial to Neural Networks and Generative AI
 
 **Ever wonder how chatbots work?** You know, those virtual assistants always ready to answer your questions? Let's dive in without any intimidating math or coding!
 
