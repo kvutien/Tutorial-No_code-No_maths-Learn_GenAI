@@ -183,7 +183,8 @@ Again, the exact combination and types of filters depend on the specific task an
 ### 5.3	Seeing Road Signs with AI Eyes: A Simplified Look
 Imagine a robot car trying to understand traffic signs. That's where Convolutional Neural Networks (CNNs) come in!
 Think of a CNN as a series of "boxes" stacked one after another. Each box holds smaller boxes called filters, like tiny detective glasses. Their job? To scan the image, looking for specific patterns.
--	In our example below, we have 3 boxes:
+
+In our example below, we have 3 boxes:
 -	**Detail Detective**: This box has filters that spot small things like numbers. It might find the digits "8" and "0".
 -	**Digit Decoder**: This box uses larger filters, combining smaller patterns like "8" and "0" into something bigger, like the number "80".
 -	**Shape Sleuth**: This box has even bigger filters, looking for the overall shape of the sign. In this case, it finds the telltale red circle of a speed limit sign.
